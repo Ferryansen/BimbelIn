@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PyramidFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/pyramid_base_width"
+            android:layout_width="292dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:fontFamily="@font/popregular"
+            android:hint="Base Width"
+            android:inputType="number"
+            android:paddingLeft="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/pyramid_base_length"
+            android:layout_width="292dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:fontFamily="@font/popregular"
+            android:hint="Base Length"
+            android:inputType="number"
+            android:paddingLeft="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pyramid_base_width" />
+
+        <EditText
+            android:id="@+id/pyramid_height"
+            android:layout_width="292dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:fontFamily="@font/popregular"
+            android:hint="Height"
+            android:inputType="number"
+            android:paddingLeft="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pyramid_base_length" />
+
+        <Button
+            android:id="@+id/equals_button_volume"
+            android:layout_width="292dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/popmedium"
+            android:text="Equals"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteback"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pyramid_height" />
+
+        <TextView
+            android:id="@+id/result_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Result"
+            android:textSize="48sp"
+            android:fontFamily="@font/popregular"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/equals_button_volume"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

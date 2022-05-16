@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Counter"
+        android:icon="@drawable/ic_baseline_123_24"
+        android:id="@+id/nav_counter"/>
+    <item android:title="Area"
+        android:icon="@drawable/ic_baseline_crop_square_24"
+        android:id="@+id/nav_area"/>
+    <item android:title="Volume"
+        android:icon="@drawable/ic_baseline_table_view_24"
+        android:id="@+id/nav_volume"/>
+</menu>
